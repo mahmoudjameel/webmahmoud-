@@ -7,17 +7,47 @@ body {
     width: 1170px;
     margin: auto
 }
+.clearfix {clear: both}
 
 /* star header*/
 .header .slider{
-    
-    background-color: #eee;
+        background-image: url('../img/macbook.jpg'); /* css 3 */
+background-size:cover;
     height: 600px
+}
+.header .slider .intro  {
+    
+    padding-top: 200px;
+    height: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+.header .slider .intro h2 {
+    
+    margin: 0 auto;
+    font-size: 50px;
+    width: 600px;
+   border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: 5px 0;
+    
+}
+.header .slider .intro button{
+    
+    background:none;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
 }
 .header .navbar{
         background-color:#252f31;
         color: #fff;
-        overflow: hidden
+        overflow: hidden;
+    
 
 }
 
@@ -43,7 +73,15 @@ body {
 .header .navbar ul li {
     
     float: left; padding: 10px}
-
+.header .navbar ul li a{
+    color: #fff;
+    text-decoration: none; /* عشان ما يعمل خط تحت اللينك */ 
+    
+}
+.header .navbar ul li a:hover{
+    
+    color: #388576;
+}
 
 /* end header*/
 /* featu  ss */
@@ -57,10 +95,17 @@ body {
     float: left;
     width: 33.33333%;
     height: 150px;
-    background-color: #DDD;
     
 }
-.featutres .feat h2{ text-transform: uppercase}
+.featutres .feat h2{color: #555}
+
+.featutres .feat p {
+    
+    line-height: 1.7;
+    color: #888;
+  
+}
+
 /*end featutres */
 /* start about me */
 
@@ -83,6 +128,19 @@ body {
     
     width: 60%;
 }
+.about-me .info h2 {
+    margin: 40px 0 20px  40px;
+}
+.about-me .info h1{
+    color: red;
+}
+.about-me .info p {
+    margin: 0 0 10px 40px;
+    line-height: 1.7;
+    color: #777;
+    
+}
+
 .about-me .info .hobbies {
     overflow: hidden;
     margin: 20px;
@@ -102,6 +160,15 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     overflow: hidden;
+}
+.my-skills .skills button{
+    
+    background: none;
+    border: 3px solid #2dcc78;
+    padding: 10px 30px;
+    color: #2dcc70;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 .my-skills .skills , my-skills .progress{
@@ -128,9 +195,63 @@ body {
     overflow: hidden;
 }
 
-.my-education .education , my-education .ex{
+.my-education .main , my-education .ex{
     width: 50%;
     float: left;
         
 }
 /* end mu education */
+
+/* star testimonials */
+.testimonials {
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+/* end testimonials */
+/* start portfolio */
+
+.portfolio {
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.portfolio .our-work {
+    overflow: hidden;
+}
+.portfolio .our-work > div {
+    
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 10px;
+}
+.portfolio .our-work > div img { width: 92%;margin: 10px;}
+
+/*end portfolio */
+/* start contact me */
+.contact {
+    
+    background-color: #252f31;
+    overflow: hidden;
+}
+.contact h2{color: #fff}
+.contact p { color: #6a6e71}
+.contact .info,
+.contact .form {
+    width: 50%;
+    float: left;
+    
+}
+/* end contact me */
+/* start footer */
+
+.footer {
+    background-color: #191e22;
+    color: #6a6e71;
+    padding: 20px 0;
+    text-align: center;
+}
+/* end footer */
