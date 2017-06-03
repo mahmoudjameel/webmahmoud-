@@ -118,3 +118,19 @@ body {
     text-align: center;
     
 }
+/* end resume */
+
+/* star my education */
+
+.my-education {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.my-education .education , my-education .ex{
+    width: 50%;
+    float: left;
+        
+}
+/* end mu education */
